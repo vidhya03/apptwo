@@ -6,9 +6,9 @@ Navbar
     font-size: 10px;
     color: #ccc
 }
-
+$body-bg: #008000;
 .jh-navbar {
-    background-color: #353d47;
+    background-color: $body-bg;
     padding: .2em 1em;
     .profile-image {
         margin: -10px 0px;
@@ -17,7 +17,7 @@ Navbar
         border-radius: 50%;
     }
     .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
-        background-color: #353d47;
+        background-color: $body-bg;
     }
     .dropdown-toggle::after {
         margin-left: 0.15em;
@@ -69,7 +69,7 @@ Logo styles
             width: 70px;
             display: inline-block;
             vertical-align: middle;
-            background: url("../../../content/images/logo-jhipster.png") no-repeat center center;
+            background: url("../../../content/images/apptwo-logo.png") no-repeat center center;
             background-size: contain;
         }
     }

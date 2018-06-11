@@ -16,4 +16,7 @@ export * from './register/register.service';
 export * from './register/register.route';
 export * from './settings/settings.component';
 export * from './settings/settings.route';
+export * from './token/token.route';
+export * from './token/token.component';
+export * from './token/token.service';
 export * from './account.route';

@@ -16,6 +16,8 @@ import {
     PasswordResetInitComponent,
     PasswordResetFinishComponent,
     SettingsComponent,
+    TokenService,
+    TokenComponent,
     accountState
 } from './';
 
@@ -31,15 +33,18 @@ import {
         PasswordStrengthBarComponent,
         PasswordResetInitComponent,
         PasswordResetFinishComponent,
-        SettingsComponent
+        SettingsComponent,
+        TokenComponent
+
     ],
     providers: [
         Register,
         ActivateService,
         PasswordService,
         PasswordResetInitService,
-        PasswordResetFinishService
+        PasswordResetFinishService,
+        TokenService
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppTwoAccountModule {}
+export class AppTwoAccountModule { }

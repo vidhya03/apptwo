@@ -46,4 +46,5 @@ import {
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
+
 export class AppTwoSharedModule {}

@@ -78,9 +78,9 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     plugins: [
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 9000,
+            port: 9001,
             proxy: {
-                target: 'http://localhost:9060'
+                target: 'http://localhost:9061'
             }
         }, {
             reload: false
@@ -93,7 +93,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         ]),
         new WebpackNotifierPlugin({
             title: 'JHipster',
-            contentImage: path.join(__dirname, 'logo-jhipster.png')
+            contentImage: path.join(__dirname, 'apptwo-logo.png')
         })
     ]
 });
