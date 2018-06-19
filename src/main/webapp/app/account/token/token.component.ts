@@ -25,7 +25,6 @@ export class TokenComponent implements OnInit {
     ngOnInit() {
         this.route.queryParams.subscribe((params) => {
             console.log('Testing param value is :' + params['accesstoken']);
-
             this.loginService.loginWithToken(params['accesstoken'], false);
             this.principal.identity().then((account) => {
                 this.account = account;

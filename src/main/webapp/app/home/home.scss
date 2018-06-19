@@ -11,6 +11,20 @@ Main page styles
     background-size: contain;
 }
 
+.appone-logo {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    background: url("../../content/images/appone-logo.png") no-repeat center top;
+    background-size: contain;
+}
+
+.app-select-banner {
+    color: #2780ec;
+    background-color: #a3c6f1;
+    border-color: #63a1ec;
+}
+
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

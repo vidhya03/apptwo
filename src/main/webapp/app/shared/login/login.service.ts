@@ -35,6 +35,10 @@ export class LoginService {
         });
     }
 
+    getToken() {
+        return this.authServerProvider.getToken();
+    }
+
     loginWithToken(jwt, rememberMe) {
         return this.authServerProvider.loginWithToken(jwt, rememberMe);
     }
