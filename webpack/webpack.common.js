@@ -53,6 +53,7 @@ module.exports = (options) => ({
                 // (see the `jhipster.cors` common JHipster property in the `application-*.yml` configurations)
                 // SERVER_API_URL: `''`
                 SERVER_API_URL: `'http://mcvde03.eur.ad.sag:1000/'`
+                // SERVER_API_URL: `'http://localhost:8383/'`
             }
         }),
         new webpack.optimize.CommonsChunkPlugin({
