@@ -3,22 +3,22 @@
   "short_name": "AppTwo",
   "icons": [
       {
-          "src": "./content/images/apptwo-logo.png",
+          "src": "./content/images/Cumulocity_Logo.png",
           "sizes": "192x192",
           "type": "image/png"
       },
       {
-          "src": "./content/images/apptwo-logo.png",
+          "src": "./content/images/Cumulocity_Logo.png",
           "sizes": "256x256",
           "type": "image/png"
       },
       {
-          "src": "./content/images/apptwo-logo.png",
+          "src": "./content/images/Cumulocity_Logo.png",
           "sizes": "384x384",
           "type": "image/png"
       },
       {
-          "src": "./content/images/apptwo-logo.png",
+          "src": "./content/images/Cumulocity_Logo.png",
           "sizes": "512x512",
           "type": "image/png"
       }

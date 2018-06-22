@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
@@ -12,7 +12,7 @@ import { Account, LoginService, LoginModalService, Principal } from '../shared';
     ]
 
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewChecked {
     hostName: string;
     account: Account;
     modalRef: NgbModalRef;
@@ -28,10 +28,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.hostName = window.location.hostname;
     }
 
-    ngAfterViewInit() {
+    ngAfterViewChecked() {
+        console.log('on after view checked');
         this.updateJwt();
     }
-
     ngOnInit() {
         this.principal.identity().then((account) => {
             this.account = account;
@@ -46,15 +46,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
                 this.updateJwt();
             });
         });
-        this.updateJwt();
     }
 
     private updateJwt() {
         if (this.isAuthenticated() === true) {
             const path = '/#/token?accesstoken=';
-                const hostPort = 'http://' + this.hostName + ':8080';
-                // const hostPort = 'http://mcgraj02.eur.ad.sag:9090';
-                this.jwt = hostPort + path + this.loginService.getToken();
+            const hostPort = 'http://' + this.hostName + ':8080';
+            this.jwt = hostPort + path + this.loginService.getToken();
+        } else {
+            console.log('on else');
         }
     }
     isAuthenticated() {

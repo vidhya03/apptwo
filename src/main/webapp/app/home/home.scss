@@ -7,7 +7,7 @@ Main page styles
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../../content/images/apptwo-logo.png") no-repeat center top;
+    background: url("../../content/images/Cumulocity_Logo.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -15,8 +15,9 @@ Main page styles
     display: inline-block;
     width: 100px;
     height: 70px;
-    background: url("../../content/images/appone-logo.png") no-repeat center top;
+    background: url("../../content/images/apigateway-logo.1.png") no-repeat center center;
     background-size: contain;
+    background-color: #63a1ec;
 }
 
 .app-select-banner {
@@ -34,7 +35,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../../content/images/apptwo-logo.png") no-repeat center top;
+        background: url("../../content/images/Cumulocity_Logo.png") no-repeat center top;
         background-size: contain;
     }
 }

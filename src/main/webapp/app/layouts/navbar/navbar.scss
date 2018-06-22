@@ -6,7 +6,7 @@ Navbar
     font-size: 10px;
     color: #ccc
 }
-$body-bg: #008000;
+$body-bg: #2c3637;
 .jh-navbar {
     background-color: $body-bg;
     padding: .2em 1em;
@@ -69,7 +69,7 @@ Logo styles
             width: 70px;
             display: inline-block;
             vertical-align: middle;
-            background: url("../../../content/images/apptwo-logo.png") no-repeat center center;
+            background: url("../../../content/images/Cumulocity_Logo.png") no-repeat center center whitesmoke;
             background-size: contain;
         }
     }
